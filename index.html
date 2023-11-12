@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Surya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="sun" onclick="showPopup('map.jpg')"></div>
+    <div class="planet" id="planet1" onclick="showPopup('map1.jpg')"></div>
+    <div class="planet" id="planet2" onclick="showPopup('map2.jpg')"></div>
+    <div class="planet" id="planet3" onclick="showPopup('map3.jpg')"></div>
+    <div class="planet" id="planet4" onclick="showPopup('map4.jpg')"></div>
+    <div class="planet" id="planet5" onclick="showPopup('map5.jpg')"></div>
+    <div class="planet" id="planet6" onclick="showPopup('map6.jpg')"></div>
+    <div class="planet" id="planet7" onclick="showPopup('map7.jpg')"></div>
+    <div class="planet" id="planet8" onclick="showPopup('map8.jpg')"></div>
+    <div class="line" id="line1"></div>
+    <div class="line" id="line2"></div>
+    <div class="line" id="line3"></div>
+    <div class="line" id="line4"></div>
+    <div class="line" id="line5"></div>
+    <div class="line" id="line6"></div>
+    <div class="line" id="line7"></div>
+    <div class="line" id="line8"></div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="left-section">
+                <div class="image"></div>
+            </div>
+            <div class="right-section">
+                <span class="close" id="closePopup">&times;</span>
+                <p>Ini adalah teks konten popup.</p>
+            </div>
+        </div>
+    </div>
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="menu">
+        <div class="close-button">&#10006;</div>
+        <div class="user-info">
+        <img src="Earth.png" alt="Foto Anda"></div>
+        <div class="span">By : M.R. Maula</div>
+        <ul>
+            <li><a href="#">Mercury</a></li>
+            <li><a href="#">Venus</a></li>
+            <li><a href="#">Earth</a></li>
+            <li><a href="#">Mars</a></li>
+            <li><a href="#">Jupiter</a></li>
+            <li><a href="#">Saturn</a></li>
+            <li><a href="#">Uranus</a></li>
+            <li><a href="#">Neptune</a></li>
+        </ul>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
